@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocxy Hezyekel Sitanggang</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(270deg, #667eea, #764ba2, #667eea, #764ba2);
+  background-size: 800% 800%;
+  animation: AnimationName 30s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%, 100% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+}
+
+.container {
+  max-width: 1200px;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.title:hover {
+  transform: scale(1.1);
+}
+
+.quote {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #e6e6e6;
+  transition: all 0.5s ease;
+}
+
+.quote:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.social-media li {
+  margin: 0 15px;
+}
+
+.social-media a {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  color: #667eea;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-media a:hover {
+  background-color: #f7f7f7;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(102, 110, 234, 0.5);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .social-media a {
+    padding: 0.5rem 1rem;
+  }
+}
+</style>
+</head>
+<body>
+<div class="background-animation"></div>
+<div class="container">
+  <div class="title">Rocxy Hezyekel Sitanggang</div>
+  <div class="quote">"Serahkanlah hidupmu kepada TUHAN dan percayalah kepada-Nya, dan Ia akan bertindak - Maz. 37:5"</div>
+  <div class="know-more">
+    <p>Ingin mengenal lebih jauh tentang saya? Ikuti dua tautan media sosial ini:</p>
+    <ul class="social-media">
+      <li><a href="https://www.instagram.com/rocxy_sitanggang" target="_blank">Instagram</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100004790298772" target="_blank">Facebook</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
