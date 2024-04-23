@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sosial Media GKPI</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+  }
+  .social-media {
+    list-style: none;
+    padding: 0;
+  }
+  .social-media li {
+    display: inline-block;
+    margin: 10px;
+  }
+  .social-media a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .facebook { background-color: #3b5998; }
+  .instagram { background-color: #e4405f; }
+  .tiktok { background-color: #000000; }
+  .youtube { background-color: #c4302b; }
+
+  .social-media a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  .social-media a:focus {
+    animation: pulse 1s infinite;
+  }
+</style>
+</head>
+<body>
+  <h1>Ikuti GKPI di Sosial Media</h1>
+  <ul class="social-media">
+    <li><a href="https://www.facebook.com/profile.php?id=100084266307907&mibextid=ZbWKwL" class="facebook" target="_blank">Facebook</a></li>
+    <li><a href="https://www.instagram.com/gkpisinode_official?igsh=bmliYzJxY3ljNzRs" class="instagram" target="_blank">Instagram</a></li>
+    <li><a href="https://www.tiktok.com/@sinodegkpi?_t=8ljN5omsGOn&_r=1" class="tiktok" target="_blank">TikTok</a></li>
+    <li><a href="https://youtube.com/@gkpichannel6081?feature=shared" class="youtube" target="_blank">YouTube</a></li>
+  </ul>
+</body>
+</html>

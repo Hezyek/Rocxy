@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biro Administrasi, Informasi, dan Komunikasi GKPI</title>
+<style>
+  @keyframes scan {
+    0% { background-position: 0 -100vh; }
+    35%, 100% { background-position: 0 100vh; }
+  }
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      text-shadow:
+        -0.2rem -0.2rem 1rem #4af626,
+        0.2rem 0.2rem 1rem #4af626,
+        0 -0.2rem 1rem #4af626,
+        0.2rem -0.2rem 1rem #4af626;
+      color: #4af626;
+    }
+    20%, 24%, 55% {
+      text-shadow: none;
+      color: #e3f6d4;
+    }
+  }
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, transparent 50%, rgba(74, 246, 38, 0.05) 50%);
+    background-size: 100%;
+    animation: scan 7.5s linear infinite;
+  }
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #111;
+    overflow: hidden;
+  }
+  header h1 {
+    text-align: center;
+    font-size: 2em;
+    animation: flicker 3s linear infinite;
+  }
+  section#main {
+    margin-top: 15px;
+  }
+  section#main h2 {
+    margin-bottom: 10px;
+    animation: flicker 4s linear infinite;
+  }
+  section#main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    animation: flicker 5s linear infinite;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Biro Administrasi, Informasi, dan Komunikasi GKPI</h1>
+  </header>
+  <div class="container">
+    <section id="main">
+      <h2>Dipimpin oleh Pdt. Dr. Robinsar Siregar, M.Th</h2>
+      <p>Biro Administrasi, Informasi, dan Komunikasi GKPI memegang peranan penting dalam mendukung visi dan misi Gereja Kristen Protestan Indonesia (GKPI). Bertanggung jawab atas pengelolaan administratif yang efisien, penyebaran informasi yang akurat, dan komunikasi yang efektif di antara jemaat dan struktur gereja.</p>
+      <p>Dengan kepemimpinan yang kuat dari Pdt. Dr. Robinsar Siregar, M.Th, biro ini berupaya untuk memastikan bahwa semua operasi gereja berjalan lancar dan bahwa komunitas GKPI tetap terinformasi tentang kegiatan, program, dan inisiatif gereja.</p>
+    </section>
+  </div>
+</body>
+</html>
