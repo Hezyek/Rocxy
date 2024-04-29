@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Loading Screen</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+    touch-action: none;
+  }
+  .loader, .background, .copyright {
+    animation: fadeOut 1s ease-in-out 6s forwards;
+  }
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background: url('https://gkpisinode.org/wp-content/uploads/2021/08/REDESIGN-LOGO-SINODE.png') no-repeat center center;
+    background-size: 200px 200px;
+    opacity: 1;
+    animation: softBlink 2s ease-in-out infinite, fadeOut 1s ease-in-out 6s forwards;
+  }
+  @keyframes softBlink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(-45deg, #6a11cb 0%, #2575fc 100%);
+    animation: backgroundFade 10s ease infinite;
+  }
+  @keyframes backgroundFade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  .copyright {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2575fc, 0 0 70px #2575fc, 0 0 80px #2575fc, 0 0 100px #2575fc; /* Efek bercahaya */
+  }
+</style>
+</head>
+<body>
+<div class="background"></div>
+<div class="loader"></div>
+<div class="copyright">
+  Hak Cipta © 2024 Biro Infokom GKPI
+</div>
+<script>
+  window.onload = function() {
+    setTimeout(function(){
+      document.querySelector('.loader').style.opacity = '0';
+      document.querySelector('.background').style.opacity = '0';
+      document.querySelector('.copyright').style.opacity = '0';
+    }, 6000); // Tunggu 6 detik
+  };
+</script>
+</body>
+</html>
